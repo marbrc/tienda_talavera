@@ -88,6 +88,44 @@ Arquitectura en capas: dominio puro (reglas), datos (almacenamiento) y presentac
 
 Mes y año: cualquier fecha futura (ej. 12 / 30). CVV: 123. Cupones: `DOLORES10`, `TALAVERA15`.
 
+## PANTALLAS 
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/ecc272e7-deb5-45bd-b8d0-e15abbe1d22b" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/4c395188-63fc-4b13-ac08-e6a3a2305ced" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/2ebf031b-45a4-47cb-9611-137535616f71" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/6955ea2a-48aa-46ab-9189-6fb8af33db87" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/fc1190b3-9081-496d-9682-2265be775bd7" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/22ffd4d3-b24d-4f7a-9207-d600b2164a6c" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/2f990468-806d-4986-8a1c-52b0a6ffe014" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/a375542d-ad95-49d8-aeaa-a221bfa7ab2c" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/bc9a2ed9-55bf-48f7-8dbc-83ebc2071441" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/77057ad5-3d9f-4efb-be69-f74c42a388b7" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/a1c435ef-dbd7-418f-994e-81341a8f24d6" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/74fbee1e-b500-4a9a-8c78-f2075550fa6c" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/41ff25ce-4aac-496c-a53c-e95151f754d9" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/a2ef2e71-165c-4b8f-873b-10a7183688fd" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/5de54ce6-04c7-4fc5-9ba0-b6f930c42dc8" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/1fd27f28-f7a6-4a53-9ba5-c6982be235ea" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/6caa1783-3d8d-43d7-a2b5-6ac509d74349" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/c372cbcf-79c5-4fb5-b53d-ad7bdb407f43" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/eef9f869-084d-43f7-811a-abc44ee53ef7" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/cb32a206-3e68-4d37-bb9b-708bffd26616" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/5ecba008-dd0e-4b88-b338-996018fbddca" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/e32518a1-95dc-4c11-a44d-479b5b2a23d9" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/aa3f6e55-1a79-434d-91b4-2932a988ed32" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/501f5355-76be-461a-9040-59eaef6d0bb2" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/62bc6111-0947-4d27-8faa-48192e38b673" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/d5bf67db-d74a-4a4d-8aee-090677bb3e67" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/da6e1f83-588e-447a-b439-a02757cb6793" />
+## TARJETA APROBADA
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/a4bd1b4a-290b-4145-96f5-78aae3521996" />
+## TARJETA RECHAZADA POR EL BANCO
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/17f07b81-0489-4ea8-81f1-7e078b82cd05" />
+## TARJETA SALDO INSUFICIENTE
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/d555253e-9e80-4409-a926-f118e92524a2" />
+
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/22b876ad-01f0-4bf3-81eb-87dd97d2b233" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/6ec79386-63ed-40ae-88c6-856fbeaa7ec5" />
+
 
 
 
