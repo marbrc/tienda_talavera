@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../dependencias.dart';
 import '../../dominio/dinero.dart';
+import '../tema.dart';
 import 'pantalla_ver_en_tu_espacio.dart';
 
 class PantallaDetalle extends StatelessWidget {
@@ -37,10 +38,18 @@ class PantallaDetalle extends StatelessWidget {
         ],
       ),
       body: ListView(padding: const EdgeInsets.all(16), children: [
-        Center(child: Text(p.emoji, style: const TextStyle(fontSize: 110))),
+        Container(
+          height: 220,
+          decoration: BoxDecoration(
+            color: Colores.salvia,
+            borderRadius: BorderRadius.circular(20),
+          ),
+          child: Center(child: Text(p.emoji, style: const TextStyle(fontSize: 110))),
+        ),
         const SizedBox(height: 12),
         Text(p.nombre, style: Theme.of(context).textTheme.headlineSmall),
-        Text(formatearPesos(p.precioCentavos), style: Theme.of(context).textTheme.titleLarge),
+        Text(formatearPesos(p.precioCentavos),
+            style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w700, color: Colores.bosque)),
         const SizedBox(height: 8),
         Text(p.descripcion),
         if (p.dimensiones != null) ...[

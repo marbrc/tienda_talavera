@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../dependencias.dart';
 import '../../dominio/dinero.dart';
 import '../../dominio/producto.dart';
+import '../tema.dart';
 import 'pantalla_detalle.dart';
 
 class PantallaCatalogo extends StatelessWidget {
@@ -13,7 +14,14 @@ class PantallaCatalogo extends StatelessWidget {
   Widget build(BuildContext context) {
     final vm = deps.catalogo;
     return Scaffold(
-      appBar: AppBar(title: const Text('Talavera Dolores')),
+      appBar: AppBar(
+        toolbarHeight: 72,
+        title: const Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Text('Talavera Dolores'),
+          Text('Artesanías de Dolores Hidalgo',
+              style: TextStyle(fontSize: 13, fontWeight: FontWeight.w400, color: Colores.musgo)),
+        ]),
+      ),
       body: ListenableBuilder(
         listenable: vm,
         builder: (context, _) {
@@ -32,9 +40,8 @@ class PantallaCatalogo extends StatelessWidget {
               padding: const EdgeInsets.fromLTRB(12, 8, 12, 4),
               child: TextField(
                 decoration: const InputDecoration(
-                  prefixIcon: Icon(Icons.search),
+                  prefixIcon: Icon(Icons.search, color: Colores.musgo),
                   hintText: 'Buscar productos',
-                  border: OutlineInputBorder(),
                   isDense: true,
                 ),
                 onChanged: vm.buscar,
@@ -60,7 +67,7 @@ class PantallaCatalogo extends StatelessWidget {
                       padding: const EdgeInsets.all(12),
                       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 2,
-                        childAspectRatio: 0.8,
+                        childAspectRatio: 0.74,
                         crossAxisSpacing: 12,
                         mainAxisSpacing: 12,
                       ),
@@ -84,7 +91,13 @@ class _Chip extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Padding(
         padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 6),
-        child: FilterChip(label: Text(texto), selected: activo, onSelected: (_) => alTocar()),
+        child: FilterChip(
+          label: Text(texto),
+          selected: activo,
+          showCheckmark: false,
+          labelStyle: TextStyle(color: activo ? Colors.white : Colores.tinta),
+          onSelected: (_) => alTocar(),
+        ),
       );
 }
 
@@ -101,16 +114,31 @@ class _Tarjeta extends StatelessWidget {
             MaterialPageRoute(builder: (_) => PantallaDetalle(deps: deps, productoId: p.id)),
           ),
           child: Padding(
-            padding: const EdgeInsets.all(12),
+            padding: const EdgeInsets.all(10),
             child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Expanded(child: Center(child: Text(p.emoji, style: const TextStyle(fontSize: 56)))),
+              Expanded(
+                child: Container(
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: Colores.salvia,
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: Center(child: Text(p.emoji, style: const TextStyle(fontSize: 52))),
+                ),
+              ),
+              const SizedBox(height: 10),
               Text(p.nombre, maxLines: 2, overflow: TextOverflow.ellipsis,
-                  style: const TextStyle(fontWeight: FontWeight.bold)),
+                  style: const TextStyle(fontWeight: FontWeight.w600, color: Colores.tinta)),
               const SizedBox(height: 4),
               Row(children: [
-                Text(formatearPesos(p.precioCentavos)),
+                Text(formatearPesos(p.precioCentavos),
+                    style: const TextStyle(fontWeight: FontWeight.w700, color: Colores.bosque)),
                 const Spacer(),
-                if (p.tieneModelo3d) const Tooltip(message: 'Ver en tu espacio', child: Icon(Icons.view_in_ar, size: 20)),
+                if (p.tieneModelo3d)
+                  const Tooltip(
+                    message: 'Ver en tu espacio',
+                    child: Icon(Icons.view_in_ar, size: 20, color: Colores.dorado),
+                  ),
               ]),
               if (p.existencias == 0) const Text('Agotado', style: TextStyle(color: Colors.red)),
             ]),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'dependencias.dart';
+import 'presentacion/tema.dart';
 import 'presentacion/pantallas/pantalla_carrito.dart';
 import 'presentacion/pantallas/pantalla_catalogo.dart';
 import 'presentacion/pantallas/pantalla_perfil.dart';
@@ -17,7 +18,7 @@ class TiendaApp extends StatelessWidget {
   Widget build(BuildContext context) => MaterialApp(
         title: 'Talavera Dolores',
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(colorSchemeSeed: const Color(0xFF1F4E9C), useMaterial3: true),
+        theme: TemaTalavera.claro,
         home: const _Raiz(),
       );
 }
